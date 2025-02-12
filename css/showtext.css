@@ -1,0 +1,43 @@
+.show-text-button-search,
+.show-text-button-luxiang,
+.show-text-button-app,
+.show-text-button-notifications{
+  
+  position:absolute;
+  bottom:-30px;
+  font-size:25px;
+  background-color:gray;
+  border-radius:2px;
+  border:none;
+  width:100px;
+  height:40px;
+  text-align:center;
+  opacity:0;
+  transition: opacity 0.15s;
+}
+.header-icon-div-search:hover .show-text-button-search{
+  opacity:1;
+}
+
+.header-icon-div-luxiang:hover .show-text-button-luxiang{
+  opacity:1;
+}
+
+.header-icon-div-app:hover .show-text-button-app{
+  opacity:1;
+}
+
+.show-text-button-app{
+  height:80px;
+  bottom:-60px;
+}
+
+.header-icon-div-notifications:hover .show-text-button-notifications{
+  opacity:1;
+}
+
+.show-text-button-notifications{
+  width:160px;
+}
+
+

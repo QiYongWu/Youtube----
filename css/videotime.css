@@ -1,0 +1,9 @@
+.video-time{
+  background-color:black;
+  color:white;
+  position:absolute;
+  bottom:0;
+  right:0;
+  font-size:12px;
+  font-family:Arial;
+}

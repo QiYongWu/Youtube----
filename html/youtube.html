@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTuBe.com Clone</title>
+  <link rel="stylesheet" href="/HtmlandCSS/学习/html/lastproject/css/image.css">
+  <link rel="stylesheet" href="../css/youtube.css">
+  <link rel="stylesheet" href="../css/left.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/videotime.css">
+  <link rel="stylesheet" href="../css/showtext.css">
+  <link rel="stylesheet" href="../css/header-button.css">
+  <link rel="stylesheet" href="../css/响应式设计.css">
+
+</head>
+<body>
+
+<div class="all" style="display:flex;flex-direction:column">
+
+  <div class="header">
+  <div class="left-selection" style="display:flex; 
+  flex-direction:row">
+    <div style="flex:1;vertical-align:top;margin-top:15px;
+    margin-right:35px;">
+      <img src="../header-images/1.svg" style="width:40px;padding-top:0px;
+      ">
+    </div>
+    <div style="flex:1;vertical-align:top;margin-top:15px;">
+      <img src="../header-images/2.svg" style="width:130px">
+    </div>
+  </div>
+
+  <div class="middle-selection" style="display: flex; align-items: center;">
+    <div>
+      <input 
+        type="text" 
+        placeholder="Search" 
+        class="searchbox" 
+        id="search-input"
+      >
+    </div>
+    <div class="header-icon-div-search" 
+    style="position:relative;">
+    <button class="header-icon-button-search">
+      <img class="search-img" src="../header-images/search.svg">
+    </button> 
+      <div class="show-text-button-search">
+        Search
+      </div>
+    </div>
+  </div>
+  
+  <div class="right-selection" style="display:flex;
+  justify-content:space-between">
+
+    <div class="header-icon-div-luxiang" style="position:relative">
+    <button class="header-icon-button-luxiang">
+      <img src="../header-images/录像.svg"
+      style="width:40px;
+      vertical-align:top;
+      margin-top:10px;">
+    </button>
+    <div class="show-text-button-luxiang">
+      Create
+    </div>
+    </div>
+
+    <div class="header-icon-div-app"
+    style="position:relative;">
+      <button class="header-icon-button-app">
+      <img src="../header-images/youtube-apps.svg"
+      style="width:40px;
+       vertical-align:top;
+       margin-top:10px;">
+       </button>
+      <div class="show-text-button-app">
+        YouTuBe apps
+      </div>
+    </div>
+
+    <div class="header-icon-div-notifications"
+    style="position:relative;">
+      
+      <button class="header-icon-button-tongzhi">
+      <img src="../header-images/通知.svg"
+      style="width:40px;
+       vertical-align:top;
+       margin-top:10px;">
+       </button>
+       <div style="position:absolute;
+       top:10px;
+       right:5px;
+       background-color:red;
+       color:white;
+       border-radius:100%;
+       width:20px;
+       
+       text-align:center;
+       ">
+        3
+       </div>
+
+       <div class="show-text-button-notifications">
+        Notifications
+       </div>
+    </div>
+    <div>
+      <button class="header-icon-button-selfphoto">
+      <img src="../header-images/个人头像.jpg"
+      style="width:50px;
+       vertical-align:top;
+       ">
+       </button>
+    </div>
+  </div>
+  
+  </div>
+
+  <div class="lefteAndmain" style="display:flex; flex-direction:row">
+
+  <div class="left" style="display:flex;flex-direction:column;
+   width:80px; height:680px;
+   justify-content:space-between;
+">
+    <div class="left-object-imgAndp">
+    <button class="left-div-button-home">
+      <img  class="left-object" src="../left-images/home.svg">
+    </button>
+      <p class="left-object-p">
+        Home
+      </p>
+    </div>
+
+    <div class="left-object-imgAndp">
+      <button class="left-div-button-explore">
+      <img class="left-object" src="../left-images/explore.svg">
+      </button>
+      <p class="left-object-p">
+        explore
+      </p>
+    </div>
+
+    <div class="left-object-imgAndp">
+      <button class="left-div-button-subscript">
+      <img  class="left-object" src="../left-images/subscriptions.svg">
+      </button>
+      <p class="left-object-p">
+        subscriptions
+      </p>
+    </div>
+
+    <div class="left-object-imgAndp">
+      <button class="left-div-button-Originals">
+      <img  class="left-object" src="../left-images/originals.svg">
+      </button>
+      <p class="left-object-p">
+        Originals
+      </p>
+    </div>
+
+    <div class="left-object-imgAndp">
+      <button class="left-div-button-youtubemusic">
+      <img class="left-object" src="../left-images/youtube-music.svg">
+      </button>
+      <p class="left-object-p">
+        YouTube Music
+      </p>
+    </div>
+    <div class="left-object-imgAndp">
+      <button class="left-div-button-Library">
+      <img class="left-object" src="../left-images/library.svg" >
+      </button>
+      <p class="left-object-p">
+        Library
+      </p>
+    </div>
+    </div>
+    
+    <div class="main" style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;
+    column-gap:10px;
+    row-gap:10px" >
+  <!--column-gap是列间距-->
+  <!--row-gap是行间距-->
+    
+    <div class="video-preview">
+      <div class="imageAndvedio-time"
+      style="position:relative;">
+      <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image1.png">
+      
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          14:20
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author1.png">
+        </div>
+
+        <div style="display:inline-block;height:15px;" >
+          <p class="title" style="margin-top:0px">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+        
+          <p class="author">
+            Marques Brownlee
+          </p>
+        </a>
+        
+          <p class="views">
+            3.4M views &#183 6 months ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="imageAndvedio-time" style="position:relative">
+        <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image2.png">
+        
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          8:22
+        </div>
+      </div>
+      
+    <!--
+      grid-template-columns 水平排列
+    -->
+      <div style="margin-top:15px;
+          display:grid;
+          grid-template-columns:70px 1fr">
+        <div style="display:inline-block ; vertical-align:top; margin-right:15px;">
+          <img class = "author-image" src="../images/author2.png">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px">
+            Try Not To Laugh Challenge #9
+          </p>
+       
+          <p class="author">
+            Markiplier
+          </p>
+
+        </a>
+        
+          <p class="views">
+            19M views · 4 years ago
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="imageAndvedio-time" style="position:relative;">
+        <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image3.png">
+    
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          9:13
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author3.png">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px">
+            Crazy Tik Toks Taken Moments Before DISASTER
+          </p>
+        
+          <p class="author">
+            SSSniperWolf
+          </p>
+        </a>
+        
+          <p class="views">
+            12M views · 1 year ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="imageAndvedio-time"
+      style="position:relative">
+      <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image4.png">
+      
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          22.09
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author4.png">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px">
+          The Simplest Math Problem No One Can Solve - Collatz Conjecture
+          </p>
+        
+          <p class="author">
+            Veritasium
+          </p>
+
+        </a>
+
+        
+          <p class="views">
+            8M views · 4 months ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+        
+    <!--2-->
+    <div class="video-preview">
+      <div class="imageAndvedio-time"
+      style="position:relative">
+      <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image5.png">
+     
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          11:17
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author5.jpg">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px"> 
+          Kadane's Algorithm to Maximum Sum Subarray Problem
+          </p>
+          <p class="author">
+            CS Dojo
+          </p>
+        </a>
+        
+          <p class="views">
+            519K views · 5 years ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="imageAndvedio-time"
+      style="position:relative">
+      <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image6.png">
+      
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          19:59
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author6.jpg">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px">
+          Anything You Can Fit In The Circle I’ll Pay For
+          </p>
+          <p class="author">
+            MrBeast
+          </p>
+        </a>
+        
+          <p class="views">
+            141M views · 1 year ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="imageAndvedio-time"
+      style="position:relative">
+      <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image7.png">
+      
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          10:13
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author7.jpg">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px">
+          Why Planes Don't Fly Over Tibet
+          </p>
+          <p class="author">
+            VRealLifeLore
+          </p>
+        </a>
+        
+          <p class="views">
+            6.6M views · 1 year ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="imageAndvedio-time"
+      style="position:relative">
+      <a href="https://www.youtube.com/watch?v=lFm4EM1juls" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image8.png">
+      
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          7:12
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author8.jpg">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px">
+            Inside The World's Biggest Passenger Plane
+          </p>
+          <p class="author">
+            Tech Vision
+          </p>
+        </a>
+        
+          <p class="views">
+            3.7M views · 10 months ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <!--3-->
+    <div class="video-preview">
+      <div class="imageAndvedio-time"
+      style="position:relative">
+      <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image9.png">
+      
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          13.17
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author9.jpg">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px">
+          The SECRET to Super Human STRENGTH
+          </p>
+          <p class="author">
+            ThenX
+          </p>
+        </a>
+        
+          <p class="views">
+            20M views · 3 year ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="imageAndvedio-time"
+      style="position:relative">
+      <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image10.png">
+     
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          7:53
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author10.jpg">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px">
+          How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+          </p>
+          <p class="author">
+            Business Insider
+          </p>
+        </a>
+        
+          <p class="views">
+            14M views · 1 year ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div  style="position:relative">
+      <a href="https://www.youtube.com/watch?v=0nZuYyXET3s" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image11.png">
+      
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          4:10
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author11.jpg">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px">
+            Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+          </p>
+          <p class="author">
+            Destination Tips
+          </p>
+        </a>
+        
+          <p class="views">
+            3M views · 1 year ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="imageAndvedio-time"
+      style="position:relative">
+      <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs" style="text-decoration: none; color: inherit;">
+        <img class = "image" src="../images/image12.png">
+      
+        <div class="vedio-time"
+        style="position:absolute;bottom:8px;right:5px;
+        background-color:black;
+        color:white;">
+          4:51
+        </div>
+      </div>
+
+      <div  style="margin-top:15px ; display:grid;
+      grid-template-columns:70px 1fr">
+        <div style="display:inline-block ;
+        
+        vertical-align:top">
+          <img class = "author-image" 
+          src="../images/author12.jpg">
+        </div>
+
+        <div style="display:inline-block">
+          <p class="title" style="margin-top:0px">
+            What would happen if you didn’t drink water? - Mia Nacamulli
+          </p>
+       
+          <p class="author">
+            TED-Ed
+          </p>
+        </a>
+        
+          <p class="views">
+            12M views · 5 years ago
+          </p>
+        </div>
+      
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+</body>
+</html>
+
+
+
+<!--
+div is block element
+can contain other element,is container
+-->

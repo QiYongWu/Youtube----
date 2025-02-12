@@ -1,0 +1,70 @@
+.header{
+  position: sticky;
+  top: 0; /* 距离顶部固定 */
+ 
+  z-index: 10; /* 防止被其他元素遮挡 */
+  background-color:gray;
+  margin-top:0px; 
+  margin-left:0px;
+  height:80px;
+  vertical-align:top;
+}
+
+.searchbox{
+  padding-left:10px;
+  width:400px;
+  border-style:solid;
+  border-color:rgb(192,192,192);
+  border-radius:5px;
+  box-shadow:inset 1px;
+  
+ 
+
+}
+
+.left-selection,.right-selection,.middle-selection{
+  padding-top:0px;
+  padding-top:10px;
+  padding-left:30px;
+  padding-right:30px;
+}
+
+
+.header,.left{
+  background-color:white;
+}
+
+.middle-selection {
+  display: flex; /* 让搜索框和按钮在同一行 */
+  align-items: center; /* 垂直居中 */
+  gap: 10px; /* 调整搜索框和图标之间的间距 */
+}
+
+.searchbox {
+  width: 300px; /* 搜索框宽度 */
+  height: 60px; /* 搜索框高度 */
+  padding: 0 10px; /* 内间距，确保文字与边框有距离 */
+  border: 1px solid #ccc; /* 边框样式 */
+  border-radius: 20px; /* 圆角效果 */
+  font-size: 16px; /* 字体大小 */
+}
+
+.search-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px; /* 图标按钮宽度 */
+  height:60px;
+  /* height: 60px; 图标按钮高度 */
+  /* background-color: #f1f1f1;  */
+ 
+  cursor: pointer; /* 鼠标移入时显示手形 */
+  border:normal;
+  margin-left:0;
+}
+
+.search-img img {
+  width: 24px; /* 图标宽度 */
+  height: 24px; /* 图标高度 */
+}
+
