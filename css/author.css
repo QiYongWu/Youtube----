@@ -1,0 +1,14 @@
+.authorInformationAndViews-div{
+    margin-top : 15px ; 
+    display : grid;
+    grid-template-columns : 70px  1fr;
+}
+
+.authorVideo-div{
+  display : inline-block ;
+  vertical-align : top"
+}
+
+.TitleAndAuthorName-div{
+  display:inline-block;height:15px;
+}
