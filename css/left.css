@@ -1,0 +1,22 @@
+#left-div{
+  display : flex;
+  flex-direction : column;
+  border : solid 1px gray;
+  width:70px;
+  border-top:none;
+  /* justify-content:center; */
+  align-items:center;
+  position: fixed;
+  margin-top:70px;
+  height:100%;
+}
+.left-button{
+  width:50px;
+  height:50px;
+  margin-top:20px;
+}
+
+.left-text{
+  font-size:10px;
+  text-align:center;
+}

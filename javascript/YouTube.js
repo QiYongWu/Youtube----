@@ -2,6 +2,8 @@ let headerHTML = "";
 let leftHTML = "";
 let mainHTML = "";
 const header = document.getElementById("header-div");
+const left = document.getElementById("left-div");
+const main = document.getElementById("main-div");
 informationOfHeader.forEach((item,index)=>{
 
   let html;
@@ -38,6 +40,22 @@ informationOfHeader.forEach((item,index)=>{
 })
 // 使用属性选择器查找指定src的img元素
 
-header.innerHTML = headerHTML;
+informationOfLeft.forEach((item,index) =>{
+ 
+  const html = `
+  <button class="left-button" id="left-button-${item.name}">
+    <img class="left-image" id="left-image-${item.name}"
+    src="${item.image}" >
+  </button>
 
+  <p class="left-text" id="left-text-${item.name}">
+    ${item.name}
+  </p>
+`;
+
+
+  leftHTML += html;
+})
+header.innerHTML = headerHTML;
+left.innerHTML = leftHTML;
 

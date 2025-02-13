@@ -264,7 +264,7 @@ const informationOfLeft = [
     name : "YouTube Music"
   },
   {
-    image : "../left-images/library.svg",
+    image : "../All images/left-images/library.svg",
     name : "Library"
   }
 ];
