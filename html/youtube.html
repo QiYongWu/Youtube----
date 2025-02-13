@@ -3,179 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTuBe.com Clone</title>
-  <link rel="stylesheet" href="/HtmlandCSS/学习/html/lastproject/css/image.css">
-  <link rel="stylesheet" href="../css/youtube.css">
-  <link rel="stylesheet" href="../css/left.css">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/videotime.css">
-  <link rel="stylesheet" href="../css/showtext.css">
-  <link rel="stylesheet" href="../css/header-button.css">
-  <link rel="stylesheet" href="../css/响应式设计.css">
-  <link rel = "stylesheet"  href = "../css/author.css">
-  <link rel = "stylesheet"  href = "../css/videos.css">
+  <title>Clone A YouTube's  Website</title>
 
+  <!--style-->
+  <link rel = "styleSheet" href = "../css/Youtube.css">
+  <link rel = "styleSheet" href = "../css/header.css">
+
+  <!--style-->
 </head>
 <body>
-
-<div class="all">
-  <div class="header">
-      <div class="left-selection">
-        <div id = "headerImage1-div">
-          <img src="../All images/header-images/1.svg" id = "headerImage1">
-        </div>
-        <div id = "headerImage2-div">
-          <img src="../All images/header-images/YouTube.svg"  id = "headerImage2">
-        </div>
-      </div>
-
-      <div class="middle-selection">
-        <div>
-          <input 
-            type="text" 
-            placeholder="Search" 
-            class="searchbox" 
-            id="search-input"
-          >
-        </div>
-
-        <div class="header-icon-div-search">
-        <button class="header-icon-button-search">
-          <img class="search-img" src="../All images/header-images/search.svg">
-        </button> 
-          <div class="show-text-button-search">
-            Search
-          </div>
-        </div>
-      </div>
-      
-      <div class="right-selection">
-        <div class="header-icon-div-luxiang">
-        <button class="header-icon-button-luxiang">
-          <img id = "luxiangImage" src="../All images/header-images/录像.svg">
-        </button>
-        <div class="show-text-button-luxiang">
-          Create
-        </div>
-        </div>
-
-        <div class="header-icon-div-app">
-          <button class="header-icon-button-app">
-          <img id = "youtubeAppImage" src="../All images/header-images/youtube-apps.svg">
-          </button>
-          <div class="show-text-button-app">
-            YouTuBe apps
-          </div>
-        </div>
-
-        <div class="header-icon-div-notifications">
-          
-          <button class="header-icon-button-tongzhi">
-          <img id = "tongzhiImage" src="../All images/header-images/通知.svg">
-          </button>
-          <div id = "tongzhiCount-div">
-            3
-          </div>
-
-          <div class="show-text-button-notifications">
-            Notifications
-          </div>
-        </div>
-        <div>
-          <button class="header-icon-button-selfphoto">
-          <img id = "gerentouxiangImage" src="../All images/header-images/个人头像.jpg">
-          </button>
-        </div>
-      </div>
-  
-  </div>
-
-
-
-
-  <div class="lefteAndmain" style="display:flex; flex-direction:row">
-    <div class="left" style="display:flex;flex-direction:column;
-    width:80px; height:680px;
-    justify-content:space-between;
-  ">
-      <div class="left-object-imgAndp">
-      <button class="left-div-button-home">
-        <img  class="left-object" src="../left-images/home.svg">
-      </button>
-        <p class="left-object-p">
-          Home
-        </p>
-      </div>
-
-      <div class="left-object-imgAndp">
-        <button class="left-div-button-explore">
-        <img class="left-object" src="../left-images/explore.svg">
-        </button>
-        <p class="left-object-p">
-          explore
-        </p>
-      </div>
-
-      <div class="left-object-imgAndp">
-        <button class="left-div-button-subscript">
-        <img  class="left-object" src="../left-images/subscriptions.svg">
-        </button>
-        <p class="left-object-p">
-          subscriptions
-        </p>
-      </div>
-
-      <div class="left-object-imgAndp">
-        <button class="left-div-button-Originals">
-        <img  class="left-object" src="../left-images/originals.svg">
-        </button>
-        <p class="left-object-p">
-          Originals
-        </p>
-      </div>
-
-      <div class="left-object-imgAndp">
-        <button class="left-div-button-youtubemusic">
-        <img class="left-object" src="../left-images/youtube-music.svg">
-        </button>
-        <p class="left-object-p">
-          YouTube Music
-        </p>
-      </div>
-      <div class="left-object-imgAndp">
-        <button class="left-div-button-Library">
-        <img class="left-object" src="../left-images/library.svg" >
-        </button>
-        <p class="left-object-p">
-          Library
-        </p>
-      </div>
-      </div>
-      
-    <div class="main">
-    
-      <div class="video-preview js-video-preview">
-            
-      </div>
-
+  <div id = "all-div">
+    <div id = "header-div">
 
     </div>
 
+    <div id = "left-div"></div>
+    <div id = "main-div"></div>
   </div>
 
-</div>
-
-
-<script  src = "../data/information.js"></script>
-<script  src = "../javascript/YouTube.js"></script>
-
+  <script src = "../data/information.js"></script>
+  <script src = "../javascript/YouTube.js"></script>
 </body>
 </html>
-
-
-
-<!--
-div is block element
-can contain other element,is container
--->

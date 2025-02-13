@@ -1,4 +1,4 @@
-const information = [
+const informationOfMain = [
   {
     authorInformation:{
       authorName : "Marques Brownlee",
@@ -198,4 +198,73 @@ const information = [
   }, //12
 
 
+];
+
+const informationOfHeader = [
+  {
+    image : "../All images/header-images/1.svg",
+    showText : "",
+  },
+  {
+    image : "../All images/header-images/YouTube.svg",
+    showText : "",
+  },
+
+  {
+    image : "This is input",
+    showText : ""
+  },
+
+  {
+    image : "../All images/header-images/search.svg",
+    showText : "Search"
+  },
+  {
+    image : "../All images/header-images/录音.svg",
+    showText : "Search with your voice"
+
+  },
+  {
+    image : "../All images/header-images/录像.svg",
+    showText : "Create"
+  },
+  {
+    image : "../All images/header-images/youtube-apps.svg",
+    showText : "YouTube apps"
+  },
+  {
+     image : "../All images/header-images/通知.svg",
+     showText : "Notifications"
+  },
+  {
+    image : "../All images/header-images/个人头像.jpg",
+    showText : ""
+ }
+]
+
+const informationOfLeft = [
+  {
+    image : "../All images/left-images/home.svg",
+    name : "Home"
+  },
+  {
+    image : "../All images/left-images/explore.svg",
+    name : "Explore"
+  },
+  {
+    image : "../All images/left-images/subscriptions.svg",
+    name : "Subscriptions"
+  },
+  {
+    image : "../All images/left-images/originals.svg",
+    name : "Originals"
+  },
+  {
+    image : "../All images/left-images/youtube-music.svg",
+    name : "YouTube Music"
+  },
+  {
+    image : "../left-images/library.svg",
+    name : "Library"
+  }
 ];

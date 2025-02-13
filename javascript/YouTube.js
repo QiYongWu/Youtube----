@@ -1,38 +1,43 @@
-let informationHtml = ""
-information.forEach((item) => {
-  const html = `
-  <div class = "imageAndvedioTime-div" >
-    <a  class = "videoLink-a" href="${item.videoInformation.videoLink}">
-      <img class = "image" src="${item.videoInformation.videoImage}">
-      <div class="vedio-time-div">
-        ${item.videoInformation.videoTimes}
+let headerHTML = "";
+let leftHTML = "";
+let mainHTML = "";
+const header = document.getElementById("header-div");
+informationOfHeader.forEach((item,index)=>{
+
+  let html;
+  if(item.image == "This is input"){ //输入框
+    html = 
+    `
+      <input id = "header-input" placeholder = "Search">
+    `
+  }
+  else{
+    if(item.showText){  //需要显示文本 after hover
+      html = 
+      `
+      <div class = "header-button-preview" isShowText = true>
+        <button class = "header-button" id = "header-button${index+1}">
+          <img class = "header-image" id = "header-image${index+1}" src = "${item.image}">
+        </button>
       </div>
-  </div>
+      `
+    }
+    else{  //不需要显示文本
+      html = 
+      `
+      <div class = "header-button-preview" isShowText = false>
+        <button class = "header-button" id = "header-button${index+1}">
+          <img class = "header-image" id = "header-image${index+1}" src = "${item.image}">
+        </button>
+      </div>
+      `
+    }
+  } 
+  headerHTML +=html;
 
-  <div class = "authorInformationAndViews-div">
-    <div class = "authorVideo-div">
-      <img class = "author-image" src="${item.authorInformation.authorImage}">
-    </div>
-    
-    <div class = "TitleAndAuthorName-div">
-      <p class="title">
-        ${item.videoInformation.title}
-      </p>
-      
-      <p class="author">
-        ${item.authorInformation.authorName}
-      </p>
-    </a>
-            
-      <p class="views">
-        ${item.videoInformation.views}
-      </p>
-    </div>  
-  </div> `
-  
-  informationHtml = informationHtml + html;
 })
+// 使用属性选择器查找指定src的img元素
 
-const jsVideoPreview = document.querySelector('.js-video-preview');
-jsVideoPreview.innerHTML = informationHtml;
+header.innerHTML = headerHTML;
+
 
