@@ -56,6 +56,51 @@ informationOfLeft.forEach((item,index) =>{
 
   leftHTML += html;
 })
+
+informationOfMain.forEach((item,index) =>{
+  const html = 
+  `
+  <div class = "main-video-preview-div">
+    <div class = "main-video-and-videoTime">
+      <a href = "${item.videoInformation.videoLink}" class = "main-video-link">
+        <img src = "${item.videoInformation.videoImage}" class = "main-image"
+        id = "main-image-${item.authorInformation.authorName}">
+      </a>
+      <p class = "main-imageTime" id = "main-imageTime-${item.authorInformation.authorName}">
+        ${item.videoInformation.videoTimes}
+      </p>
+    </div>
+
+    <div class = "main-authorInformation-videoTitle-and-views">
+      <div class = "main-authorImage-and-videoTitle">
+        <img src = "${item.authorInformation.authorImage}" class = "main-authorImage"
+        id = "main-authorImage-${item.authorInformation.authorName}">
+        <a href = "${item.videoInformation.videoLink}" class = "main-video-link">
+          <p class = "main-videoTitle">
+            ${item.videoInformation.title}
+          </p>
+        </a>
+      </div>
+
+      <div class = "main-authorName-and-videoViews">
+        <p class = "main-authorName" id = "main-authorName-${item.authorInformation.authorName}">
+          <a href = "https://www.youtube.com/c/${item.authorInformation.authorName}" class = "main-link-to-author-website">${item.authorInformation.authorName}</a>
+        </p>
+
+        <p class = "main-videoViews">
+          ${item.videoInformation.views}
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+  
+  `
+  mainHTML+=html;
+})
+
 header.innerHTML = headerHTML;
 left.innerHTML = leftHTML;
+main.innerHTML = mainHTML;
 

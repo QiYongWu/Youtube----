@@ -66,21 +66,21 @@ const informationOfMain = [
   {
     authorInformation : {
       authorName : "CS Dojo",
-       authorImage : "../All images/images/author5.png"
+       authorImage : "../All images/images/author5.jpg"
     },
     videoInformation : {
       title : "Kadane's Algorithm to Maximum Sum Subarray Problem",
       views : "519K views · 5 years ago",
       videoLink : "https://www.youtube.com/watch?v=86CQq3pKSUw",
       videoTimes : "11:17",
-      videoImage : "../All images/images/author5.png",
+      videoImage : "../All images/images/image5.png",
     }
   }, //5
 
   {
     authorInformation : {
       authorName : "MrBeast",
-      authorImage : "../All images/images/author6.png"
+      authorImage : "../All images/images/author6.jpg"
     },
     
     videoInformation : {
@@ -88,14 +88,14 @@ const informationOfMain = [
       views : "141M views · 1 year ago",
       videoLink : "https://www.youtube.com/watch?v=yXWw0_UfSFg",
       videoTimes : "11:17",
-      videoImage : "../All images/images/author6.png",
+      videoImage : "../All images/images/image6.png",
     }    
   }, //6
 
   {
     authorInformation : {
       authorName : "RealLifeLore",
-      authorImage : "../All images/images/author7.png"
+      authorImage : "../All images/images/author7.jpg"
     },
 
     videoInformation : {
@@ -103,7 +103,7 @@ const informationOfMain = [
       views : "6.6M views · 1 year ago",
       videoLink : "https://www.youtube.com/watch?v=fNVa1qMbF9Y",
       videoTimes : "10:13",
-      videoImage : "../All images/images/author7.png",
+      videoImage : "../All images/images/image7.png",
     }
     
   },  //7
@@ -112,7 +112,7 @@ const informationOfMain = [
 
     authorInformation : {
       authorName : "Tech Vision",
-      authorImage : "../All images/images/author8.png"
+      authorImage : "../All images/images/author8.jpg"
     },
     
     videoInformation : {
@@ -120,7 +120,7 @@ const informationOfMain = [
       views : "3.7M views · 10 months ago",
       videoLink : "https://www.youtube.com/watch?v=lFm4EM1juls",
       videoTimes : "7:12",
-      videoImage : "../All images/images/author8.png",
+      videoImage : "../All images/images/image8.png",
     }
    
    
@@ -130,7 +130,7 @@ const informationOfMain = [
 
     authorInformation : {
       authorName : "ThenX",
-      authorImage : "../All images/images/author9.png"
+      authorImage : "../All images/images/author9.jpg"
     },
 
     videoInformation : {
@@ -138,7 +138,7 @@ const informationOfMain = [
       views : "20M views · 3 year ago",
       videoLink : "https://www.youtube.com/watch?v=ixmxOlcrlUc",
       videoTimes : "13:17",
-      videoImage : "../All images/images/author9.png",
+      videoImage : "../All images/images/image9.png",
       
     }
    
@@ -149,7 +149,7 @@ const informationOfMain = [
 
     authorInformation : {
       authorName : "Business Insider",
-      authorImage : "../All images/images/author10.png"
+      authorImage : "../All images/images/author10.jpg"
     },
 
     videoInformation : {
@@ -157,7 +157,7 @@ const informationOfMain = [
       views : "14M views · 1 year ago",
       videoLink : "https://www.youtube.com/watch?v=R2vXbFp5C9o",
       videoTimes : "7:53",
-      videoImage : "../All images/images/author10.png",
+      videoImage : "../All images/images/image10.png",
     }
     
   },  //10
@@ -165,7 +165,7 @@ const informationOfMain = [
   {
     authorInformation : {
       authorName : "Destination Tips",
-      authorImage : "../All images/images/author11.png"
+      authorImage : "../All images/images/author11.jpg"
     },
     
     videoInformation : {
@@ -173,7 +173,7 @@ const informationOfMain = [
       views : "3M views · 1 year ago",
       videoLink : "https://www.youtube.com/watch?v=0nZuYyXET3s",
       videoTimes : "4:10",
-      videoImage : "../All images/images/author11.png",
+      videoImage : "../All images/images/image11.png",
 
     }
     
@@ -183,7 +183,7 @@ const informationOfMain = [
   {
     authorInformation : {
       authorName : "TED-Ed",
-      authorImage : "../All images/images/author12.png"
+      authorImage : "../All images/images/author12.jpg"
     },
 
     videoInformation : {
@@ -191,7 +191,7 @@ const informationOfMain = [
       views : "12M views · 5 years ago",
       videoLink : "https://www.youtube.com/watch?v=9iMGFqMmUFs",
       videoTimes : "4:51",
-      videoImage : "../All images/images/author12.png",
+      videoImage : "../All images/images/image12.png",
     }
     
     

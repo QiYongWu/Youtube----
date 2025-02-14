@@ -9,6 +9,8 @@
   position: fixed;
   margin-top:70px;
   height:100%;
+  opacity: 1;
+  background-color:white;
 }
 .left-button{
   width:50px;
@@ -19,4 +21,8 @@
 .left-text{
   font-size:10px;
   text-align:center;
+}
+
+.left-button{
+  cursor:pointer;
 }

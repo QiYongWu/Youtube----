@@ -5,7 +5,13 @@
   height : 70px;
   align-items : center;
   width:100%;
+  
    position: fixed;  /*固定不动 */
+   z-index: 9999; /* 确保在最上层 */
+   opacity: 1;
+   background-color: white;
+   margin-top:0px;
+
 }
 
 .header-button{
@@ -37,7 +43,7 @@
 #header-input{
   height:40px;
   width:520px;
-  margin-left:90px;
+  margin-left:80px;
  
 }
 
