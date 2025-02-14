@@ -73,8 +73,11 @@ informationOfMain.forEach((item,index) =>{
 
     <div class = "main-authorInformation-videoTitle-and-views">
       <div class = "main-authorImage-and-videoTitle">
-        <img src = "${item.authorInformation.authorImage}" class = "main-authorImage"
-        id = "main-authorImage-${item.authorInformation.authorName}">
+       <a href = "https://www.youtube.com/c/${item.authorInformation.authorName}" class = "main-link-to-author-website"
+        id = "main-link-to-author-website-${item.authorInformation.authorName}">
+          <img src = "${item.authorInformation.authorImage}" class = "main-authorImage"
+          id = "main-authorImage-${item.authorInformation.authorName}">
+        </a>
         <a href = "${item.videoInformation.videoLink}" class = "main-video-link">
           <p class = "main-videoTitle">
             ${item.videoInformation.title}

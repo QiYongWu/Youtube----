@@ -11,6 +11,9 @@
   height:100%;
   opacity: 1;
   background-color:white;
+  height:100%;
+  top: 0;                 /* 距离页面顶部0像素 */
+  
 }
 .left-button{
   width:50px;
@@ -24,5 +27,16 @@
 }
 
 .left-button{
+  
+  background-color:white;
+  border:none;
+
+}
+
+.left-button :hover{
   cursor:pointer;
 }
+
+
+
+

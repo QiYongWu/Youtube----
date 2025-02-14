@@ -7,10 +7,14 @@
   width:100%;
   
    position: fixed;  /*固定不动 */
-   z-index: 9999; /* 确保在最上层 */
-   opacity: 1;
+  
+   opacity: 1; /*完全不透明*/
    background-color: white;
    margin-top:0px;
+   padding-left : 20px;
+   top: 0;               /* 距离页面顶部0像素 */
+   z-index: 1000;        /* 保证工具栏在其他元素之上 */
+
 
 }
 
@@ -53,11 +57,15 @@
 }
 
 #header-button5{
-  margin-right:200px;
+  margin-right:175px;
 }
 
 .header-button :hover{
    cursor:pointer;
+}
+
+#header-image9{
+  border-radius:100%;
 }
 
 
