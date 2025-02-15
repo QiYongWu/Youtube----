@@ -215,10 +215,7 @@ const informationOfHeader = [
     showText : ""
   },
 
-  {
-    image : "../All images/header-images/search.svg",
-    showText : "Search"
-  },
+  
   {
     image : "../All images/header-images/录音.svg",
     showText : "Search with your voice"

@@ -10,8 +10,11 @@ informationOfHeader.forEach((item,index)=>{
   if(item.image == "This is input"){ //输入框
     html = 
     `
-      <input id = "header-input" placeholder = "Search">
-    `
+    <div class="search-container">
+      <input id = "header-input" placeholder = "Search"  type = "search">
+      <button  class="fa fa-search" id="header-search-button"></button>
+    </div>
+      `
   }
   else{
     if(item.showText){  //需要显示文本 after hover

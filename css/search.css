@@ -1,0 +1,53 @@
+#searchResultsContainer{
+   display:flex;
+   flex-direction : column;
+   justify-content:center;
+   align-items:center;
+}
+.content{
+    border : solid;
+    width : 500px;
+    height:600px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction : column;
+
+}
+
+.videoImage{
+    width:400px;
+    height:400px;
+}
+#authorImage{
+    width:30px;
+    height:30px;
+    border-radius:100%;
+}
+
+
+.video-and-videoTimes {
+    position: relative;
+    display: inline-block; /* 或 block，根据需要调整 */
+    width: 400px; /* 根据实际需要设置宽度 */
+   
+  }
+  
+  .videoImage {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .videoTimes {
+    position: absolute;
+    bottom: 5px; /* 距离容器底部 5px */
+    right: 5px;  /* 距离容器右侧 5px */
+    background-color: rgba(0, 0, 0, 0.6); /* 半透明背景，提高可读性 */
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 12px;
+  }
+  
+  
