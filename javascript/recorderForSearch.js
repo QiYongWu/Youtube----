@@ -20,10 +20,19 @@
   
         // 处理识别结果
         recognition.addEventListener('result', (event) => {
-          const transcript = event.results[0][0].transcript;
+          let transcript = event.results[0][0].transcript;
+
+          if (transcript.endsWith("。")) {
+            transcript = transcript.slice(0, -1);
+          }
           console.log('识别结果：', transcript);
           // 将识别到的文字填入搜索输入框
+       
+            
+          
           searchInput.value = transcript;
+          //识别成功并结束后，自动执行搜索共能
+          performSearch();
         });
   
         // 识别结束时恢复按钮样式
@@ -31,6 +40,8 @@
           recognition.stop();
           recordButton.classList.remove('recording');
           console.log('语音识别结束');
+          
+          
         });
   
         recognition.addEventListener('error', (event) => {

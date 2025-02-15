@@ -2,6 +2,7 @@
 function performSearch() {
     const searchInput = document.getElementById('header-input');
     const query = searchInput.value.trim();
+    
     if (!query) {
       alert('请输入搜索内容');
     }
@@ -15,12 +16,11 @@ function performSearch() {
   // 给搜索按钮添加点击事件
   document.getElementById('header-search-button').addEventListener('click', function(){
     performSearch();
-    isClickedSearchButton=true;
 });
   document.getElementById('header-input').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
       performSearch();
-      isClickedSearchButton=true;
+     
     }
   });
 
